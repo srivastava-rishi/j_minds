@@ -86,7 +86,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/beerName"
+                        android:id="@+id/tvBeerName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="buzz.."
@@ -117,7 +117,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/beerTagline"
+                        android:id="@+id/tvBeerTagline"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="a real bitter experience."
@@ -148,7 +148,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/beerdecription"
+                        android:id="@+id/tvBeerDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="a light, crisp and bitter IPA brewed with English and american hops. a small batch brewed only once"
@@ -181,7 +181,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/beerAbv"
+                        android:id="@+id/tvBeerAbv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="7.5"
