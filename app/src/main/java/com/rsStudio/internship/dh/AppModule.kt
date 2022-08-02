@@ -1,9 +1,12 @@
 package com.rsStudio.internship.dh
 
+import android.app.Application
 import android.content.Context
+import androidx.room.Room
 import com.google.gson.GsonBuilder
 import com.rsStudio.internship.app.App
 import com.rsStudio.internship.constant.Constant
+import com.rsStudio.internship.data.database.CacheDatabase
 import com.rsStudio.internship.retrofit.BeerInfoApi
 import dagger.Module
 import dagger.Provides
@@ -23,6 +26,13 @@ object AppModule {
     @Provides
     fun provideApplication(@ApplicationContext applicationContext: Context): App {
         return applicationContext as App
+    }
+
+    @Provides
+    @Singleton
+    fun provideSavedCacheData(app: Application): CacheDatabase{
+        return Room.databaseBuilder(app,CacheDatabase::class.java,"cache")
+            .build()
     }
 
     @Provides

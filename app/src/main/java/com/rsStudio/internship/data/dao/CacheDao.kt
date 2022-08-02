@@ -1,0 +1,21 @@
+package com.rsStudio.internship.data.dao
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import com.rsStudio.internship.data.entity.CacheEntity
+
+
+@Dao
+interface CacheDao {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+
+    suspend fun insertNewBearInfo(savedNewsEntity: List<CacheEntity>)
+
+    @Query("SELECT * FROM cache")
+
+    fun getAllSavedMessageByOrder() : List<CacheEntity>
+
+}
