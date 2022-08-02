@@ -1,4 +1,4 @@
-package com.rsStudio.internship.retrofit.networkEntity
+package com.rsStudio.internship.retrofit
 
 import java.io.Serializable
 

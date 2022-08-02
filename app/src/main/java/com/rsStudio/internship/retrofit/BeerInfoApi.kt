@@ -1,6 +1,5 @@
 package com.rsStudio.internship.retrofit
 
-import com.rsStudio.internship.retrofit.networkEntity.BeerNetworkEntity
 import retrofit2.Response
 import retrofit2.http.GET
 

@@ -8,20 +8,13 @@
         android:id="@+id/clRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@color/chineseBlack2">
 
-
-               <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="Main Activity"
-                    android:layout_centerInParent="true"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp" />
-
-
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBeerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"/>
 
     </RelativeLayout>
 
