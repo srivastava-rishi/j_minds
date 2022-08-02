@@ -1,5 +1,5 @@
 # j_minds
-It is mobile application that loads beerInfo from a api in Punk beers.
+It is mobile application that loads beer data from a api in Punk beers.
 
 # Screenshota
 ![new2](https://user-images.githubusercontent.com/84356050/182457623-39ab6584-9061-4a2a-aa36-bdd01cc9728c.jpeg)
