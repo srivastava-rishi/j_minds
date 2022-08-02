@@ -5,10 +5,14 @@
     tools:context=".splash.SplashActivity">
 
     <RelativeLayout
-        android:id="@+id/clRoot"
+        android:id="@+id/rlRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/chineseBlack2">
+
+        <include
+            android:id="@+id/iLoader"
+            layout="@layout/view_loader"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvBeerInfo"
