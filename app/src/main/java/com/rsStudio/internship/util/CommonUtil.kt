@@ -6,6 +6,7 @@ class CommonUtil {
 
     companion object {
 
+
         fun convertTheInfoIntoLowerCase(something: String): String {
 
             return something.lowercase(Locale.getDefault())

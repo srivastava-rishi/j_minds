@@ -43,7 +43,6 @@ class MainAdapter(
                 .load(item.image_url)
                 .thumbnail(0.7f)
                 .centerCrop()
-                .placeholder(R.drawable.img_default_profile_light)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .dontAnimate()
                 .into(rivBeerImage)
@@ -51,7 +50,6 @@ class MainAdapter(
         }
 
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val itemView =

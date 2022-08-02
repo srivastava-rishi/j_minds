@@ -12,10 +12,10 @@
             android:id="@+id/ivIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fontPath="fonts/Montserrat-Regular.ttf"
+            fontPath="fonts/Montserrat-Bold.ttf"
             tools:ignore="MissingPrefix"
             android:layout_centerInParent="true"
-            android:text="SplashScreen"
+            android:text="BeerBoo"
             android:textColor="@color/antiqueWhite"
             android:textSize="@dimen/_18ssp"
             />

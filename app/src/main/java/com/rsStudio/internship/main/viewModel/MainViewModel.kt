@@ -14,8 +14,9 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel
 @Inject
-constructor(private val repository: BeerInfoRepository
-): ViewModel() {
+constructor(
+    private val repository: BeerInfoRepository
+) : ViewModel() {
 
     private val logTag = "@MainViewModel"
 

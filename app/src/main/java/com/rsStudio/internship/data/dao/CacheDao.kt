@@ -11,11 +11,10 @@ import com.rsStudio.internship.data.entity.CacheEntity
 interface CacheDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-
-    suspend fun insertNewBearInfo(savedNewsEntity: List<CacheEntity>)
+    suspend fun insertAllCacheData(cacheEntity: List<CacheEntity>)
 
     @Query("SELECT * FROM cache")
 
-    fun getAllSavedMessageByOrder() : List<CacheEntity>
+    fun getAllSavedCache() : List<CacheEntity>
 
 }
