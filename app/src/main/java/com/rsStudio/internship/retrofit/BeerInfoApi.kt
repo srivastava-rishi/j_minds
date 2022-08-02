@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface BeerInfoApi {
 
-    @GET("beers?page=1&per_page=1")
+    @GET("beers?page=1&per_page=25")
 
     suspend fun getBeerDetails(): Response<List<BeerNetworkEntity>>
 

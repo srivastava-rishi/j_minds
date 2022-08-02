@@ -30,12 +30,15 @@ class MainActivity : BaseActivity() {
 
         initTheme()
 
+        initRecyclerView()
+
         viewModel.responseBeerDetail.observe(this) { response ->
 
             if (response != null) {
                 // submit list
                 val list: MutableList<BeerNetworkEntity> = mutableListOf()
                 list.addAll(response)
+                mainAdapter.submitList(response)
 
                 Log.d(logTag, "onCreate: data$list")
 
